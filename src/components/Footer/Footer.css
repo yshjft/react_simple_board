@@ -1,0 +1,36 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom: 20px;
+    width:100%;
+    background-color: #764abc;;
+}
+
+.footerName{
+    padding : 5px;
+    font-size:20px;
+    font-weight: bold;
+    color : white;
+}
+
+.gitHubLink {
+    padding : 5px;
+    text-decoration : none;
+    font-size:15px;
+    font-weight: bold;
+    color : white
+}
+
+.gitHubLink:hover {
+    color : silver;
+}
+
+.email{
+    padding : 5px;
+    font-size:15px;
+    font-weight: bold;
+    color: white;
+}

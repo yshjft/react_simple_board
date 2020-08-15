@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: #764abc;
+}
+
+.headerName{
+    margin-left :10px;
+    font-size: 30px;
+    font-weight : bold;
+    color : white;
+}
+
+.headerNav{
+    margin-right:10px;
+    
+}
+
+.nav{
+    padding:10px;
+    text-decoration:none;
+    font-size : 20px;
+    font-weight: bold;
+    color:white
+}
+
