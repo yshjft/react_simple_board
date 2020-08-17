@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
+import List from "./List";
 
 import './Board.css';
 
@@ -15,6 +16,8 @@ class Board extends Component{
                         <img src="/images/intro.png" className="introImg"></img>
                     </div>
                 </NavLink>
+                <List></List>
+                <List></List>
             </div>
         );
     }

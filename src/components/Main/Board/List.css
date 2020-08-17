@@ -1,37 +1,23 @@
-.link{
-    text-decoration:none;
-    color :black;
-}
-
-.intro{
+.list{
     margin-bottom:10px;
     padding : 10px;
     border:1px solid silver;
     border-radius: 10px;
 }
 
-.introTitle{
+.listTitle{
     margin-bottom :2px;
     font-size : 20px;
     font-weight: bold;
 }
 
-.introDate{
+.listDate{
     margin-bottom:5px;
     font-size : 14px;
     color: grey;
 }
 
-.introSubtitle{
+.listSubtitle{
     margin-bottom :10px;
     font-size : 15px;
-}
-
-
-
-.introImg{
-    width : 100%;
-    height : 100%;
-    border : 1px solid silver;
-    border-radius: 10px;
 }
