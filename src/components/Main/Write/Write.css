@@ -1,0 +1,33 @@
+.form{
+    display: flex;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.input{
+    width: 600px;
+    height :25px;
+}
+
+.write{
+    width:600px;
+    height : 250px;
+    resize: none;
+}
+
+.submitBtn{
+    margin-top : 20px;
+    height : 40px;
+    width : 100px;
+    border: 1px solid  #764abc;
+    border-radius: 30px;
+    background-color : white;
+    font-size:15px;
+    font-weight: bold;
+    color :  #764abc;
+}
+
+.submitBtn:hover{
+    background-color : #764abc;
+    color : white;
+}

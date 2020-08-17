@@ -1,0 +1,27 @@
+.readTitle{
+    margin-bottom:10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.readSubTitle{
+    margin-bottom:7px;
+    font-size: 17px;
+}
+
+.readDate{
+    margin-bottom:7px;
+    font-size : 14px;
+    color: grey;
+}
+
+.readImg{
+    margin-bottom :15px;
+    width:100%;
+    border : 1px solid silver;
+    border-radius: 10px;
+}
+
+.readContent{  
+    
+}

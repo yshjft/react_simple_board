@@ -10,8 +10,9 @@ class Board extends Component{
                 <NavLink exact to="/intro" className="link">
                     <div className="intro">
                         <div className="introTitle">INTRO</div>
-                        <div className="introDesc">프로젝트에 대한 간단한 설명입니다.</div>
-                        <img src="/images/intro.png" className="img"></img>
+                        <div className="introDate">2020.8.17</div>
+                        <div className="introSubtitle">SIMPLE BOARD에 대한 간단한 설명입니다.</div>
+                        <img src="/images/intro.png" className="introImg"></img>
                     </div>
                 </NavLink>
             </div>
