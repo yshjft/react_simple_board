@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom';
+
 import './Board.css';
 
 class Board extends Component{
     render(){
         return(
             <div className="Main">
-                <div className="tmp">
-                    <div className="tmpTitle">EXAMPLE</div>
-                    <div className="tmpDesc">간단한 설명입니다.</div>
-                </div>
-                <div className="tmp">
-                    <div className="tmpTitle">EXAMPLE2</div>
-                    <div className="tmpDesc">간단한 설명입니다.</div>
-                    <img src="/images/example.jpg" className="img"></img>
-                </div>
+                <NavLink exact to="/intro" className="link">
+                    <div className="intro">
+                        <div className="introTitle">INTRO</div>
+                        <div className="introDesc">프로젝트에 대한 간단한 설명입니다.</div>
+                        <img src="/images/intro.png" className="img"></img>
+                    </div>
+                </NavLink>
             </div>
         );
     }

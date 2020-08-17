@@ -5,20 +5,26 @@
     margin-bottom:20px;
 }
 
-.tmp{
+.link{
+    text-decoration:none;
+    color :black;
+}
+
+.intro{
     margin-bottom:10px;
     padding : 10px;
     border:1px solid silver;
+    border-radius: 10px;
 }
 
-.tmpTitle{
+.introTitle{
     margin-bottom :5px;
     font-size : 20px;
     font-weight: bold;
 }
 
-.tmpDesc{
-    margin-bottom :5px;
+.introDesc{
+    margin-bottom :10px;
     font-size : 15px;
 }
 
