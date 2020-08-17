@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './Main.css';
+import './Board.css';
 
-class Main extends Component{
+class Board extends Component{
     render(){
         return(
             <div className="Main">
@@ -19,4 +19,4 @@ class Main extends Component{
     }
 }
 
-export default Main;
+export default Board;

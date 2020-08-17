@@ -1,6 +1,7 @@
 import React from 'react';
-import './Header.css';
+import {NavLink} from 'react-router-dom';
 
+import './Header.css';
 function Header(){
     return(
         <div className="header">
@@ -8,8 +9,8 @@ function Header(){
                 SIMPLE BOARD
             </div>
             <div className="headerNav">
-                <a href="/" className='nav'>MAIN</a>
-                <a href="/" className='nav'>WRITE</a>
+                <NavLink exact to='/' className="nav">MAIN</NavLink>
+                <NavLink exact to='/write' className="nav">WRITE</NavLink>
             </div>
         </div>
     );
