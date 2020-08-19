@@ -7,8 +7,11 @@ function List(){
     return(
         <div className="list">
             <div className="listTitle">example title</div>
-            <div className="listDate">2020.x.xx</div>
-            <div classname="listSubtitle">example 입니다</div>
+            <div className="listInfo">
+                <div className="listWriter">yshjft</div>
+                <div className="listDate">2020.X.XX</div>
+            </div>
+            <div className="listSubtitle">example 입니다</div>
         </div>
     )
 }

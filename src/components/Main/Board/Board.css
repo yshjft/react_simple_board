@@ -16,18 +16,21 @@
     font-weight: bold;
 }
 
-.introDate{
+.introInfo{
+    display: flex;
     margin-bottom:5px;
-    font-size : 14px;
     color: grey;
+    font-size : 14px;
+}
+
+.introWriter{
+    margin-right :10px;
 }
 
 .introSubtitle{
     margin-bottom :10px;
     font-size : 15px;
 }
-
-
 
 .introImg{
     width : 100%;

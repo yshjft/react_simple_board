@@ -5,19 +5,29 @@ import List from "./List";
 import './Board.css';
 
 class Board extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            intro : this.props.list[0],
+        }
+    }
     render(){
         return(
             <div className="Main">
-                <NavLink exact to="/intro" className="link">
+                <NavLink exact to={this.state.intro.path} className="link">
                     <div className="intro">
-                        <div className="introTitle">INTRO</div>
-                        <div className="introDate">2020.8.17</div>
-                        <div className="introSubtitle">SIMPLE BOARD에 대한 간단한 설명입니다.</div>
-                        <img src="/images/intro.png" className="introImg"></img>
+                        <div className="introTitle">{this.state.intro.title}</div>
+                        <div className="introInfo">
+                            <div className="introWriter">{this.state.intro.writer}</div>
+                            <div className="introDate">{this.state.intro.date}</div>
+                        </div>
+                        <div className="introSubtitle">{this.state.intro.subTitle}</div>
+                        <img src={this.state.intro.imgSrc} alt="LOAD FAIL" className="introImg"></img>
                     </div>
                 </NavLink>
+
                 <List></List>
-                <List></List>
+                
             </div>
         );
     }

@@ -11,10 +11,15 @@
     font-weight: bold;
 }
 
-.listDate{
+.listInfo{
+    display: flex;
     margin-bottom:5px;
-    font-size : 14px;
     color: grey;
+    font-size : 14px;
+}
+
+.listWriter{
+    margin-right :10px;
 }
 
 .listSubtitle{

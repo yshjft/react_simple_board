@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import Board from './components/Main/Board/Board';
+import Board from './components/Main/Containers/Board'; 
 import Write from './components/Main/Write/Write';
-import Intro from './components/Main/Intro/Intro';
+import Intro from './components/Main/Read/Intro';
 import Footer from './components/Footer/Footer';
 import {Switch, Route} from 'react-router-dom';
 

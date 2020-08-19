@@ -9,10 +9,15 @@
     font-size: 17px;
 }
 
-.readDate{
+.readInfo{
+    display : flex;
     margin-bottom:7px;
     font-size : 14px;
     color: grey;
+}
+
+.readWriter{
+    margin-right : 10px;
 }
 
 .readImg{
