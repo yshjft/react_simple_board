@@ -6,11 +6,11 @@ class Intro extends Component{
     constructor(props){
         super(props);
         this.state={
-            introTitle : store.getState().list[0].title,
-            introWriter : store.getState().list[0].writer,
-            introDate : store.getState().list[0].date,
-            introSubTitle : store.getState().list[0].subTitle,
-            introImgSrc : store.getState().list[0].imgSrc,
+            introTitle : store.getState().intro.title,
+            introWriter : store.getState().intro.writer,
+            introDate : store.getState().intro.date,
+            introSubTitle : store.getState().intro.subTitle,
+            introImgSrc : store.getState().intro.imgSrc,
         }
     }
     render(){

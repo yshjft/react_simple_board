@@ -13,9 +13,9 @@ function App() {
     <div className="App">
       <Header></Header>
       <Switch className="Main">
-        <Route exact path='/'><Board></Board></Route>
-        <Route exact path='/write'><Write></Write></Route>
-        <Route exact path='/intro'><Intro></Intro></Route>
+        <Route exact path='/' component={Board}></Route>
+        <Route exact path='/write' component={Write}></Route>
+        <Route exact path='/intro' component={Intro}></Route>
       </Switch>
       <Footer></Footer>
     </div>

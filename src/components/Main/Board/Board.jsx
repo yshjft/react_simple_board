@@ -8,10 +8,16 @@ class Board extends Component{
     constructor(props){
         super(props);
         this.state={
-            intro : this.props.list[0],
+            intro : this.props.intro,
+            list : this.props.list,
         }
     }
     render(){
+        let lists=this.state.list;
+        let _list=lists.map((list, index)=>(
+            <List key={index} list={list}></List>
+        ));
+
         return(
             <div className="Main">
                 <NavLink exact to={this.state.intro.path} className="link">
@@ -26,7 +32,9 @@ class Board extends Component{
                     </div>
                 </NavLink>
 
-                <List></List>
+                {/* <List></List> */}
+                {_list}
+
                 
             </div>
         );

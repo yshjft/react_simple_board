@@ -4,32 +4,29 @@ export default createStore(function(state, action){
     if(state===undefined){
         return {
             lastId : 0,
+            intro :{
+                id : 0,
+                path: "/intro",
+                title : "INTRO",
+                writer : "yshjft",
+                date : "2020.8.17",
+                subTitle : "SIMPLE BOARD에 대한 간다한 설명입니다.",
+                imgSrc : "/images/intro.png",
+            },
             list : [
                 {
                     id : 0,
-                    path: "/intro",
-                    title : "INTRO",
+                    path: "/0",
+                    title : "FIRST EXAMPLE",
                     writer : "yshjft",
-                    date : "2020.8.17",
-                    subTitle : "SIMPLE BOARD에 대한 간다한 설명입니다.",
-                    imgSrc : "/images/intro.png",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
                 },
-                /*
-                    id
-                    path
-                    title
-                    writer
-                    date
-                    subTitle
-                    main content(write)
-                    password
-                */
             ]
         }
     } else if(action.type === "EDIT_LASTID"){
-        // let _lastId=action.lastId;
-        // return {lastId: _lastId};
-
         return {...state, lastId : action.lastId}
     }
     else if(action.type === "WRITE"){
