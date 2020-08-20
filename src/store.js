@@ -3,6 +3,7 @@ import {createStore} from 'redux';
 export default createStore(function(state, action){
     if(state===undefined){
         return {
+            selectedList:0, 
             lastId : 0,
             intro :{
                 id : 0,
@@ -28,8 +29,7 @@ export default createStore(function(state, action){
         }
     } else if(action.type === "EDIT_LASTID"){
         return {...state, lastId : action.lastId}
-    }
-    else if(action.type === "WRITE"){
+    }else if(action.type === "WRITE"){
         let originalList=state.list;
         let _list=originalList.concat({
             id : action.id,
@@ -43,5 +43,7 @@ export default createStore(function(state, action){
         });
 
         return {...state, list : _list};
+    }else if(action.type === "SELECTED_LIST"){
+        return {...state, selectedList : action.selectedList}
     }
 }, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

@@ -32,10 +32,8 @@ class Board extends Component{
                     </div>
                 </NavLink>
 
-                {/* <List></List> */}
                 {_list}
-
-                
+               
             </div>
         );
     }

@@ -1,11 +1,14 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import store from '../../../store';
 
 import "./List.css";
 
 function List(props){
     return(
-        <NavLink exact to="/" className="link">
+        <NavLink exact to={props.list.path} className="link" onClick={function(){
+            store.dispatch({type : "SELECTED_LIST", selectedList : props.list.id})
+        }}>
             <div className="list">
                 <div className="listTitle">{props.list.title}</div>
                 <div className="listInfo">
@@ -15,6 +18,7 @@ function List(props){
                 <div className="listSubtitle">{props.list.subTitle}</div>            
             </div>
         </NavLink>
+        
        
     )
 }
