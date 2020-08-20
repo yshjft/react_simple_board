@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {NavLink} from "react-router-dom";
+import {withRouter} from "react-router-dom"; //
 import store from "../../../store";
 import "./Write.css";
 
@@ -11,30 +11,31 @@ class Write extends Component{
             month : new Date().getMonth()+1,
             date : new Date().getDate(),
         };
+        this.submitClick=this.submitClick.bind(this);
+    }
+    submitClick(e){
+        e.preventDefault();
+        store.dispatch({
+            type : "EDIT_LASTID",
+            lastId : store.getState().lastId+1,
+        });
+
+        store.dispatch({
+            type: "WRITE",
+            id : store.getState().lastId,
+            title : e.target.title.value,
+            writer : e.target.writer.value,
+            date : e.target.date.value,
+            subTitle : e.target.subTitle.value,
+            write : e.target.write.value,
+            password : e.target.password.value,
+        });
+        this.props.history.push('/'); //redirection
     }
     render(){
         return(
             <div className="Main">
-                <form id="writeForm" className="writeForm" onSubmit={function (e){
-                    e.preventDefault();
-
-                    store.dispatch({
-                        type : "EDIT_LASTID",
-                        lastId : store.getState().lastId+1,
-                    });
-
-                    store.dispatch({
-                        type: "WRITE",
-                        id : store.getState().lastId,
-                        title : e.target.title.value,
-                        writer : e.target.writer.value,
-                        date : e.target.date.value,
-                        subTitle : e.target.subTitle.value,
-                        write : e.target.write.value,
-                        password : e.target.password.value,
-                    });
-                    
-                }}>
+                <form id="writeForm" className="writeForm" onSubmit={this.submitClick}>
                     <div className="form">
                         <input type="txt" placeholder="Title" className="input title" name="title" autoFocus required></input>
                     </div>
@@ -62,4 +63,4 @@ class Write extends Component{
     }
 }
 
-export default Write;
+export default withRouter(Write); //withRouter
