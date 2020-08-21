@@ -3,6 +3,8 @@ import {createStore} from 'redux';
 export default createStore(function(state, action){
     if(state===undefined){
         return {
+            modalIsOpen:false,
+            editOrDelete: "EDIT",
             selectedList:0, 
             lastId : 0,
             intro :{
@@ -45,5 +47,9 @@ export default createStore(function(state, action){
         return {...state, list : _list};
     }else if(action.type === "SELECTED_LIST"){
         return {...state, selectedList : action.selectedList}
+    }else if(action.type === "MODAL_IS_OPEN"){
+        return {...state, modalIsOpen : action.modalIsOpen}
+    }else if (action.type === "MODAL_TYPE"){
+        return {...state, editOrDelete : action.editOrDelete}
     }
 }, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

@@ -28,5 +28,23 @@
 }
 
 .readContent{  
+    margin-bottom : 100px;
+}
+
+.readBtns{
+    display: flex;
+    justify-content: center;
+    margin-bottom : 50px;
     
+}
+
+.readBtn{
+    margin : 10px;
+    width: 100px;
+    border : 1px solid #764abc;
+    border-radius: 30px;
+    background-color: #764abc;
+    color : white;
+    font-size : 20px;
+    font-weight: bold;
 }
