@@ -31,7 +31,6 @@ class Board extends Component{
                         <img src={this.state.intro.imgSrc} alt="LOAD FAIL" className="introImg"></img>
                     </div>
                 </NavLink>
-
                 {_list}
                
             </div>

@@ -1,0 +1,65 @@
+.closeBtnArea{
+    display: flex;
+    justify-content : flex-end;
+}
+
+.modalMain{
+    margin-top :100px;
+    margin-bottom : 40px;
+    text-align:center;
+}
+
+.modalInfo{
+    color : #724abc;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.modalPwd{
+    margin-top: 30px;
+    border:1px solid silver;
+    border-radius: 10px;
+    height : 30px;
+    width :  70%;
+}
+
+.wrongPwd{
+    margin-top:20px;
+    color : red;
+    font-weight:bold;
+    visibility: hidden;
+}
+
+.closeBtn{
+    border : 1px solid #724abc;
+    border-radius: 50px;
+    background-color : #724abc;
+    color : white;
+    font-size : 15px;
+    font-weight: bold;
+}
+
+.closeBtn:hover{
+    border : 1px solid #724abc;
+    background-color : white;
+    color : #724abc;
+}
+
+.btnArea{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    border : 1px solid #724abc;
+    border-radius: 50px;
+    background-color : #724abc;
+    color : white;
+    font-size : 25px;
+}
+
+.btn:hover{
+    border : 1px solid #724abc;
+    background-color : white;
+    color : #724abc;
+}
