@@ -2,7 +2,7 @@ import React from 'react';
 import store from '../../store';
 import './modal.css'
 
-function Delete(props){
+function mDelete(props){
     return(
         <div>
             <div className="closeBtnArea" >
@@ -36,4 +36,4 @@ function Delete(props){
     )
 }
 
-export default Delete;
+export default mDelete;

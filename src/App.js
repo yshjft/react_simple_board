@@ -8,9 +8,11 @@ import Footer from './components/Footer/Footer';
 import Modal from 'react-modal';
 import Edit from './components/Modal/Edit';
 import Delete from './components/Modal/Delete';
+import EditPage from './components/Main/Edit/Edit';
 import {Switch, Route} from 'react-router-dom';
 import store from './store';
 import './App.css';
+import editPage from './components/Main/Edit/Edit';
 
 Modal.setAppElement('#root');
 class App extends Component{
@@ -46,6 +48,7 @@ class App extends Component{
           <Route exact path={'/'+this.state.selectedList}>
             <Read content={this.state.contents[this.state.selectedList]}></Read>
           </Route>
+          <Route exact path='/edit'><editPage content={this.state.contents[this.state.selectedList]}></editPage></Route>
         </Switch>
         <Footer></Footer>
         <Modal 
