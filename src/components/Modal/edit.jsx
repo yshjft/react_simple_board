@@ -1,4 +1,5 @@
 import React from 'react';
+import {withRouter} from "react-router-dom";
 import store from '../../store';
 import './modal.css';
 
@@ -22,9 +23,9 @@ function Edit(props){
                 <button className="btn" onClick={function(){
                     let pwd=document.getElementById("modalPwd").value;
                     if(pwd === props.pwd){
-                        alert('ok');
                         document.getElementById("modalPwd").value=null;
                         document.querySelector(".wrongPwd").style.visibility='hidden';
+                        this.props.history.push('/edit');
                     }else{
                         document.getElementById("modalPwd").value=null;
                         document.querySelector(".wrongPwd").style.visibility='visible';
@@ -36,4 +37,4 @@ function Edit(props){
 
 }
 
-export default Edit;
+export default withRouter(Edit);
