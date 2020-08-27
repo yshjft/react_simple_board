@@ -10,7 +10,7 @@ function Delete(){
     let history=useHistory();
     return(
         <div>
-            <div className="closeBtnArea" >
+            <div className="closeBtnArea" >``
                 <button className="closeBtn" onClick={function(){
                     store.dispatch({
                         type : "MODAL_IS_OPEN",
