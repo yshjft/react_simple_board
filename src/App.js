@@ -32,9 +32,9 @@ class App extends Component{
     let editOrDelete=store.getState().editOrDelete;
     let modalComp;
     if(editOrDelete === "EDIT"){
-      modalComp=<Edit pwd={this.state.contents[this.state.selectedList].password}></Edit>
+      modalComp=<Edit></Edit>
     }else if(editOrDelete === "DELETE"){
-      modalComp=<Delete pwd={this.state.contents[this.state.selectedList].password}></Delete>
+      modalComp=<Delete></Delete>
     }
 
     return(
@@ -47,7 +47,7 @@ class App extends Component{
           <Route exact path={'/'+this.state.selectedList}>
             <Read content={this.state.contents[this.state.selectedList]}></Read>
           </Route>
-          <Route exact path='/edit'><EditPage content={this.state.contents[this.state.selectedList]}></EditPage></Route>
+          <Route exact path='/edit'><EditPage id={this.state.selectedList} content={this.state.contents[this.state.selectedList]}></EditPage></Route>
         </Switch>
         <Footer></Footer>
         <Modal 

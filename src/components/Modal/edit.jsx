@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useHistory} from "react-router-dom";
 import store from '../../store';
 import './modal.css';
 
-function Edit(props){
+function Edit(){
+    let [pwd]=useState(store.getState().list[store.getState().selectedList].password);
     let history = useHistory();
     return(
         <div>
@@ -22,8 +23,8 @@ function Edit(props){
             </div>
             <div className="btnArea">
                 <button className="btn" onClick={function(){
-                    let pwd=document.getElementById("modalPwd").value;
-                    if(pwd === props.pwd){
+                    let _pwd=document.getElementById("modalPwd").value;
+                    if(_pwd === pwd){
                         document.getElementById("modalPwd").value=null;
                         document.querySelector(".wrongPwd").style.visibility='hidden';
                         store.dispatch({

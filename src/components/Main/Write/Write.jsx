@@ -52,7 +52,7 @@ class Write extends Component{
                         <textarea placeholder="write something" className="write" name="write" required></textarea>
                     </div>
                     <div className="form">
-                        <input type="password" placeholder="password for Edit or Delete"className="input password" name="password"></input>
+                        <input type="password" placeholder="password for Edit or Delete"className="input password" name="password" required></input>
                     </div>
                     <div className="form">
                         <input type="submit" value="SUBMIT" className="submitBtn"></input>

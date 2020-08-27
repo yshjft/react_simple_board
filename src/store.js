@@ -51,5 +51,31 @@ export default createStore(function(state, action){
         return {...state, modalIsOpen : action.modalIsOpen}
     }else if (action.type === "MODAL_TYPE"){
         return {...state, editOrDelete : action.editOrDelete}
+    }else if(action.type === "EDIT"){
+        let originalList=state.list;
+        let _list=originalList.concat();
+        _list[action.id]={
+            id: action.id,
+            path : "/"+action.id,
+            title : action.title,
+            writer: action.writer,
+            date : action.date,
+            subTitle : action.subTitle,
+            write : action.write,
+            password : action.password,
+        }
+
+        return {...state, list: _list};
+    }else if(action.type === "DELETE"){
+        let originalList=state.list;
+        let _list=originalList.concat();
+        _list.splice(action.selectedList, 1);
+
+        for(let i=0; i<_list.length; i++){
+            _list[i].id=i;
+        }
+
+        return {...state, lastId: action.lastId, list : _list};
+
     }
 }, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
