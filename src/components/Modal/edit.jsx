@@ -1,9 +1,10 @@
 import React from 'react';
-import {withRouter} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import store from '../../store';
 import './modal.css';
 
 function Edit(props){
+    let history = useHistory();
     return(
         <div>
             <div className="closeBtnArea" >
@@ -25,7 +26,11 @@ function Edit(props){
                     if(pwd === props.pwd){
                         document.getElementById("modalPwd").value=null;
                         document.querySelector(".wrongPwd").style.visibility='hidden';
-                        this.props.history.push('/edit');
+                        store.dispatch({
+                            type : "MODAL_IS_OPEN",
+                            modalIsOpen : false,
+                        });
+                        history.push('/edit');
                     }else{
                         document.getElementById("modalPwd").value=null;
                         document.querySelector(".wrongPwd").style.visibility='visible';
@@ -37,4 +42,4 @@ function Edit(props){
 
 }
 
-export default withRouter(Edit);
+export default Edit;

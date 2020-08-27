@@ -14,7 +14,7 @@ function editPage(){
                     <input type="txt" placeholder="Writer" className="input writer" name="writer" required></input>
                 </div>
                 <div className="form">
-                    <input value={this.state.year+"."+this.state.month+"."+this.state.date} className="input date" name="date" readOnly></input>
+                    <input className="input date" name="date" readOnly></input>
                 </div>
                 <div className="form">
                     <textarea placeholder="write something" className="write" name="write" required></textarea>
