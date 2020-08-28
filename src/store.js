@@ -27,6 +27,216 @@ export default createStore(function(state, action){
                     write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
                     password : "111111"
                 },
+                {
+                    id : 1,
+                    path: "/0",
+                    title : "2FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 2,
+                    path: "/0",
+                    title : "3FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 3,
+                    path: "/0",
+                    title : "4FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 4,
+                    path: "/0",
+                    title : "5FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 0,
+                    path: "/0",
+                    title : "65IFRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 1,
+                    path: "/0",
+                    title : "7FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 2,
+                    path: "/0",
+                    title : "8FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 3,
+                    path: "/0",
+                    title : "9FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 4,
+                    path: "/0",
+                    title : "10FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 0,
+                    path: "/0",
+                    title : "11FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 1,
+                    path: "/0",
+                    title : "12FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 2,
+                    path: "/0",
+                    title : "13FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 3,
+                    path: "/0",
+                    title : "14FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 4,
+                    path: "/0",
+                    title : "15FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 0,
+                    path: "/0",
+                    title : "16FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 1,
+                    path: "/0",
+                    title : "17FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 2,
+                    path: "/0",
+                    title : "18FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 3,
+                    path: "/0",
+                    title : "19FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 4,
+                    path: "/0",
+                    title : "20FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 3,
+                    path: "/0",
+                    title : "21FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
+                {
+                    id : 4,
+                    path: "/0",
+                    title : "22FIRST EXAMPLE",
+                    writer : "yshjft",
+                    date : "2020.8.20",
+                    subTitle : "첫번째 예시입니다.",
+                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
+                    password : "111111"
+                },
             ]
         }
     } else if(action.type === "EDIT_LASTID"){

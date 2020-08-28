@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import List from "./List";
+import Pagebar from "./Pagebar";
 
 import './Board.css';
 
@@ -14,7 +15,9 @@ class Board extends Component{
     }
     render(){
         let lists=this.state.list;
-        let _list=lists.map((list, index)=>(
+        let _lists=lists.slice(20, 22);
+
+        let _list=_lists.map((list, index)=>(
             <List key={index} list={list}></List>
         ));
 
@@ -32,7 +35,7 @@ class Board extends Component{
                     </div>
                 </NavLink>
                 {_list}
-               
+               <Pagebar></Pagebar>
             </div>
         );
     }
