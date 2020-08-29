@@ -5,6 +5,18 @@
 
 .pageBtn{
     padding : 10px;
+    outline : none;
     border : 1px solid #724abc;
     background-color : white;
+    color : #724abc;
+    font-weight: bold;
+}
+
+.selected{
+    padding : 10px;
+    outline : none;
+    border : 1px solid #724abc;
+    background-color : #724abc;
+    color : white;
+    font-weight: bold;
 }

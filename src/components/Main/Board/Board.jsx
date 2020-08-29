@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {NavLink} from 'react-router-dom';
+import {Switch, Route, NavLink} from 'react-router-dom';
 import List from "./List";
 import Pagebar from "./Pagebar";
+import store from "../../../store";
 
 import './Board.css';
 
@@ -11,15 +12,21 @@ class Board extends Component{
         this.state={
             intro : this.props.intro,
             list : this.props.list,
+            currentPage : 1,
         }
+        store.subscribe(function(){
+            this.setState({currentPage : store.getState().currentPage});
+        }.bind(this));
     }
     render(){
         let lists=this.state.list;
-        let _lists=lists.slice(20, 22);
+        let index = this.state.currentPage -1;
+        let selectedLists=lists.slice(index*4, 4*(index+1));
 
-        let _list=_lists.map((list, index)=>(
+        let listComponents=selectedLists.map((list, index)=>(
             <List key={index} list={list}></List>
         ));
+
 
         return(
             <div className="Main">
@@ -34,7 +41,7 @@ class Board extends Component{
                         <img src={this.state.intro.imgSrc} alt="LOAD FAIL" className="introImg"></img>
                     </div>
                 </NavLink>
-                {_list}
+                {listComponents}
                <Pagebar></Pagebar>
             </div>
         );
