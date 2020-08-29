@@ -27,8 +27,25 @@
     border-radius: 10px;
 }
 
+.gifArea{
+    display: flex;
+    justify-content: center;
+}
+
+.readGif{
+    margin-bottom :15px;
+    width:80%;
+    border : 1px solid silver;
+    border-radius: 10px;
+}
+
 .readContent{  
     margin-bottom : 100px;
+}
+
+.topic{
+    font-size : 20px;
+    font-weight: bold;
 }
 
 .readBtns{
