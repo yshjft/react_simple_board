@@ -1,17 +1,14 @@
-1. 설치할 것들
-* create-react-app .
-* npm install react-router-dom
-* npm install redux
-* npm install react-redux
+REACT SIMPLE BOARD
+=========================
 
-2. 기타
-* Footer 하단 고정 방법 기억할 것
+### 1. 간략한 소개
+지금까지 배운 React 관련 기술을 정리하여 만든 간단한 게시판(?) 프로젝트 입니다.
 
-3. CRUD
-* Create : 글 쓰기
-* Read : 글 읽기
-* Update : 글 수정하기
-* Delete : 글 삭제하기
+### 2. 기술 스택
+* React JS(React-Router)
+* Redux
 
-4. 잠시 중단, 아마 금요일 또는 목요일 부터 다시 시작
+### 3. 기능
+* 메인페이지
+
 
