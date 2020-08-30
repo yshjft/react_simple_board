@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Switch, Route, NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import List from "./List";
 import Pagebar from "./Pagebar";
 import store from "../../../store";
