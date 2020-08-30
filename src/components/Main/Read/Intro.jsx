@@ -84,6 +84,8 @@ class Intro extends Component{
                     <br/>
                     <div className="topic">아쉬운 점</div>
                     <br/>
+                    함수형 컴포넌트를 제대로 사용하지 못햇다는 점이 아쉬웠다. 특히 아직까지로 hook에 대한 이해도가 낮아 공부가 더 필요할 것 같다. pagination이나 글 작성, 글 수정 등에 redux를 사용하여 새로고침할 경우 값이 유지 되지 않는다는 것이 조금 안타깝다.
+                    또한 password를 필요로 하는 글 수정페이지를 password 없이 접근하는 것을 막지 못했다는 것 또한 아쉽다.
                 </div>
 
             </div>

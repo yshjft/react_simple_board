@@ -28,17 +28,6 @@ export default createStore(function(state, action){
                     write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
                     password : "111111"
                 },
-                {
-                    id : 0,
-                    path: "/0",
-                    title : "2",
-                    writer : "yshjft",
-                    date : "2020.8.20",
-                    subTitle : "첫번째 예시입니다.",
-                    write : "SIMPLE BOARD의 WRITE를 통하여 원하는 내용을 입력한 경우 첫번째 예시와 같이 내용이 나타납니다.",
-                    password : "111111"
-                },
-                
             ]
         }
     } else if(action.type === "EDIT_LASTID"){
