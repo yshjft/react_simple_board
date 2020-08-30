@@ -15,7 +15,7 @@
     "react-scripts": "3.4.3",
     "redux": "^4.0.5"
   },
-  "homepage" : "https://yshjft.github.io/",
+  "homepage" : "https://yshjft.github.io/react_simple_board/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
