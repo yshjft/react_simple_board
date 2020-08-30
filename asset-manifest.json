@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react_simple_board/static/css/main.ddfb7f50.chunk.css",
+    "main.js": "/react_simple_board/static/js/main.4a104349.chunk.js",
+    "main.js.map": "/react_simple_board/static/js/main.4a104349.chunk.js.map",
+    "runtime-main.js": "/react_simple_board/static/js/runtime-main.a1f02f57.js",
+    "runtime-main.js.map": "/react_simple_board/static/js/runtime-main.a1f02f57.js.map",
+    "static/js/2.041a1be1.chunk.js": "/react_simple_board/static/js/2.041a1be1.chunk.js",
+    "static/js/2.041a1be1.chunk.js.map": "/react_simple_board/static/js/2.041a1be1.chunk.js.map",
+    "index.html": "/react_simple_board/index.html",
+    "precache-manifest.ef5b94aaa5d22c5d605de3d625a2a640.js": "/react_simple_board/precache-manifest.ef5b94aaa5d22c5d605de3d625a2a640.js",
+    "service-worker.js": "/react_simple_board/service-worker.js",
+    "static/css/main.ddfb7f50.chunk.css.map": "/react_simple_board/static/css/main.ddfb7f50.chunk.css.map",
+    "static/js/2.041a1be1.chunk.js.LICENSE.txt": "/react_simple_board/static/js/2.041a1be1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a1f02f57.js",
+    "static/js/2.041a1be1.chunk.js",
+    "static/css/main.ddfb7f50.chunk.css",
+    "static/js/main.4a104349.chunk.js"
+  ]
+}
