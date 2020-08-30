@@ -13,7 +13,7 @@ export default createStore(function(state, action){
                 path: "/intro",
                 title : "INTRO",
                 writer : "yshjft",
-                date : "2020.8.17",
+                date : "2020.8.17 ~ 2020.8.31",
                 subTitle : "SIMPLE BOARD에 대한 간다한 설명입니다.",
                 imgSrc : "/images/intro.png",
             },
